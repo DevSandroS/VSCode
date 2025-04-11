@@ -1,7 +1,7 @@
 #preço de cada item do menu do restaurante
 
 #dados do cliente
-print("Bem vindo(a) à loja da Beatrice")
+print("Bem vindo(a) ao restaurante do Seu Menino!\n")
 nome_cliente = input("Qual o seu nome? \n")
 
 #declaração de preços
@@ -11,19 +11,27 @@ refrigerante = 9.50
 milk_shake = 18.90
 cafezinho = 7.00
 coxinha = 9.00
+norget = 5.50
 
 #retornando o valor dos itens:
-print(f"Olá {nome_cliente}! Este é o menu: ")
-print(f"Hamburguer: {hamburguer}")
-print(f"Bata frita: {babata_frita}")
-print(f"Refrigerante: {refrigerante}")
-print(f"Milk shake: {milk_shake}")
+print(f"Olá {nome_cliente}! Este é o menu: \n")
+print(f"Hamburguer: R${hamburguer:.2f}")
+print(f"Bata frita: R${babata_frita:.2f}")
+print(f"Refrigerante: R${refrigerante:.2f}")
+print(f"Milk shake: R${milk_shake:.2f}")
+print(f"Norget (5 unidades): R${norget:.2f}")
+print(f"Cafezinho: R${cafezinho:.2f}")
+print(f"Coxinha: R${coxinha:.2f} \n")
+
 
 #definição da quantidade
-quantidade_hamburguer = int(input("Digite a quantidade de hamburguer desejada: "))
-quantidade_batata_frita = int(input("Digite a quantidade de batata frita desejada: "))
-quantidade_refrigerante = int(input("Digite a quantidade de refrigerante desejada: "))
-quantidade_milk_shake = int(input("Digite a quantidade milk shake desejada: "))
+quantidade_hamburguer = int(input("Quantidade de hamburguers: "))
+quantidade_batata_frita = int(input("Quantidade de batata-fritas: "))
+quantidade_refrigerante = int(input("Quantidade de refrigerantes: "))
+quantidade_milk_shake = int(input("Quantidade de milk shakes: "))
+quantidade_cafezinho = int(input("Quantidade de cafezinhos: "))
+quantidade_coxinha = int(input("Quantidade de coxinhas: "))
+quantidade_norget = int(input("Quantidade de norgets: "))
 
 #retornando o preço total
 preco_total = (hamburguer * quantidade_hamburguer) + (babata_frita * quantidade_batata_frita) + (refrigerante * quantidade_refrigerante) + (milk_shake * quantidade_milk_shake)
